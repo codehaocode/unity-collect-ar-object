@@ -36,7 +36,7 @@ public class ARViewController : MonoBehaviour
 
     void Update()
     {
-        arCamPosition = arCam.transform.position + arCam.transform.forward * 1f;
+        arCamPosition = arCam.transform.position + arCam.transform.forward * 1.5f;
         arCamObject.transform.SetPositionAndRotation(arCamPosition, Quaternion.identity);
 
         
@@ -50,7 +50,6 @@ public class ARViewController : MonoBehaviour
         while (spawned < numToSpawn)
         {
             Vector3 position = new Vector3((UnityEngine.Random.Range(-1F, 1F)), 0.0F, UnityEngine.Random.Range(0.1F, 1.5F));
-            //GameObject randomObject = Instantiate(spherePrefab, position, Quaternion.identity);
             var randomObject = Instantiate(spherePrefab, position, Quaternion.identity);
             randomObjects.Add(randomObject);
             spawned++;
