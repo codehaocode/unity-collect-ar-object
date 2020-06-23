@@ -28,7 +28,7 @@ public class ARViewController : MonoBehaviour
 
     void Update()
     {
-        arCamPosition = arCam.transform.position + arCam.transform.forward * 0.1f;
+        arCamPosition = arCam.transform.position;
         arCamObject.transform.SetPositionAndRotation(arCamPosition, Quaternion.identity);
 
     }
