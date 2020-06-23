@@ -9,10 +9,12 @@ public class ARViewController : MonoBehaviour
 
     [SerializeField] private GameObject cubePrefab;
     [SerializeField] private GameObject spherePrefab;
-
-    private ARPlaneManager arPlaneManager;
+    [SerializeField] private GameObject arCamObject;
 
     private int numToSpawn = 10;
+
+    private Camera arCam;
+    private Vector3 arCamPosition;
 
     void Awake()
     {
@@ -24,12 +26,16 @@ public class ARViewController : MonoBehaviour
     {
         SpawnObject();
 
+        arCam = GetComponentInChildren<Camera>();
+     
+
 
     }
 
     void Update()
     {
-     
+        arCamPosition = arCam.transform.position + arCam.transform.forward * 2f;
+        arCamObject.transform.SetPositionAndRotation(arCamPosition, Quaternion.identity);
     }
 
     void SpawnObject()
