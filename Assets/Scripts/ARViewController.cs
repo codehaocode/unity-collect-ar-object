@@ -18,28 +18,19 @@ public class ARViewController : MonoBehaviour
 
     List<GameObject> randomObjects = new List<GameObject>();
 
-    void Awake()
-    {
-
-    }
-
-
     void Start()
     {
         SpawnObject();
 
         arCam = GetComponentInChildren<Camera>();
-     
-
 
     }
 
     void Update()
     {
-        arCamPosition = arCam.transform.position + arCam.transform.forward * 1.5f;
+        arCamPosition = arCam.transform.position + arCam.transform.forward * 0.1f;
         arCamObject.transform.SetPositionAndRotation(arCamPosition, Quaternion.identity);
 
-        
     }
 
     void SpawnObject()
@@ -49,7 +40,7 @@ public class ARViewController : MonoBehaviour
 
         while (spawned < numToSpawn)
         {
-            Vector3 position = new Vector3((UnityEngine.Random.Range(-1F, 1F)), 0.0F, UnityEngine.Random.Range(0.1F, 1.5F));
+            Vector3 position = new Vector3((UnityEngine.Random.Range(-1.5F, 1.5F)), 0.0F, UnityEngine.Random.Range(0.3F, 2F));
             var randomObject = Instantiate(spherePrefab, position, Quaternion.identity);
             randomObjects.Add(randomObject);
             spawned++;

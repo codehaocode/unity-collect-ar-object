@@ -18,7 +18,7 @@ public class DestroyOnCollision : MonoBehaviour
 
         source.PlayOneShot(collectSound, 1F);
       
-        Destroy(gameObject, collectSound.length);
+        Destroy(gameObject, 1F);
 
         
 
