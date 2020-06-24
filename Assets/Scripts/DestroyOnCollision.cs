@@ -16,9 +16,11 @@ public class DestroyOnCollision : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
 
-        source.PlayOneShot(collectSound, 1F);
+        // source.PlayOneShot(collectSound, 1F);
+        
+        source.Play();
       
-        Destroy(gameObject, 1F);
+        Destroy(gameObject, 0.5F);
 
     }
 }

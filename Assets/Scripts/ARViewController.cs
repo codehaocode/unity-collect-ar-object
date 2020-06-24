@@ -11,6 +11,9 @@ public class ARViewController : MonoBehaviour
     [SerializeField] private GameObject spherePrefab;
     [SerializeField] private GameObject arCamObject;
 
+    GameObject[] spawnObjects;
+    GameObject objectToSpawn;
+
     private int numToSpawn = 10;
 
     private Camera arCam;
@@ -36,10 +39,15 @@ public class ARViewController : MonoBehaviour
     void SpawnObject()
     {
 
+        // spawnObjects = GameObject.FindGameObjectsWithTag("randomObj");
+
         int spawned = 0;
 
         while (spawned < numToSpawn)
         {
+            // var index = UnityEngine.Random.Range(0, spawnObjects.Length);
+            // objectToSpawn = spawnObjects[index];
+        
             Vector3 position = new Vector3((UnityEngine.Random.Range(-1.5F, 1.5F)), 0.0F, UnityEngine.Random.Range(0.3F, 2F));
             var randomObject = Instantiate(spherePrefab, position, Quaternion.identity);
             randomObjects.Add(randomObject);
