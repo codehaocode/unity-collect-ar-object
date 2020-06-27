@@ -2,7 +2,7 @@
 
 public class DestroyOnCollision : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem burstingParticle;
+    [SerializeField] private ParticleSystem burstingParticlePrefab;
     
     private AudioSource source;
 
@@ -14,7 +14,7 @@ public class DestroyOnCollision : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         source.Play();
-        burstingParticle.Play();
+        burstingParticlePrefab.Play();
         Destroy(gameObject, 0.5F);
     }
 }
