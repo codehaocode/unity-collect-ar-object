@@ -44,7 +44,7 @@ public class ARViewController : MonoBehaviour
             var index = UnityEngine.Random.Range(0, spawnObjects.Length);
             var objectToSpawn = spawnObjects[index];
         
-            Vector3 position = new Vector3((UnityEngine.Random.Range(-1.5F, 1.5F)), 0.0F, UnityEngine.Random.Range(0.3F, 2F));
+            Vector3 position = new Vector3((UnityEngine.Random.Range(-1.5F, 1.5F)), 0.0F, UnityEngine.Random.Range(0.5F, 1.5F));
             var randomObject = Instantiate(objectToSpawn, position, Quaternion.identity);
             randomObjects.Add(randomObject);
             spawned++;

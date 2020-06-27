@@ -1006,6 +1006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arCamObject: {fileID: 1076982391}
   spawnObjects:
+  - {fileID: 7468690401876198564, guid: 05631a09085ea4802bbf0840f352a0c2, type: 3}
   - {fileID: 7207101603304788501, guid: 78f3068a6c5934507b9264c8c65e364b, type: 3}
   - {fileID: 4736464463054548501, guid: 670767a18ee3147dbb4995d498dbd95a, type: 3}
 --- !u!114 &1676292448
