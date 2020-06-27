@@ -518,6 +518,7 @@ GameObject:
   - component: {fileID: 1676292446}
   - component: {fileID: 1676292445}
   - component: {fileID: 1676292447}
+  - component: {fileID: 1676292448}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -570,3 +571,18 @@ MonoBehaviour:
   spherePrefab: {fileID: 4736464463054548501, guid: 670767a18ee3147dbb4995d498dbd95a,
     type: 3}
   arCamObject: {fileID: 1076982391}
+--- !u!114 &1676292448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676292444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutomaticPlacement: 1
+  m_EnvironmentTextureFilterMode: 2
+  m_DebugPrefab: {fileID: 0}

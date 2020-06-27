@@ -6,11 +6,14 @@ public class DestroyOnCollision : MonoBehaviour
 {
     public AudioClip collectSound;
 
+    public ParticleSystem burstingParticle;
+
     private AudioSource source;
 
     void Start()
     {
         source = GetComponent<AudioSource>();
+        burstingParticle = GetComponent<ParticleSystem>();
     }
 
     void OnCollisionEnter(Collision col)
@@ -19,7 +22,7 @@ public class DestroyOnCollision : MonoBehaviour
         // source.PlayOneShot(collectSound, 1F);
         
         source.Play();
-      
+        burstingParticle.Play();
         Destroy(gameObject, 0.5F);
 
     }

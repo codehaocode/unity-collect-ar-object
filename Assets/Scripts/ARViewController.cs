@@ -23,6 +23,9 @@ public class ARViewController : MonoBehaviour
 
     void Start()
     {
+        
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        
         SpawnObject();
 
         arCam = GetComponentInChildren<Camera>();
