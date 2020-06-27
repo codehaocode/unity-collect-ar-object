@@ -9,7 +9,6 @@ public class DestroyOnCollision : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
-        burstingParticle = GetComponent<ParticleSystem>();
     }
 
     void OnCollisionEnter(Collision col)
