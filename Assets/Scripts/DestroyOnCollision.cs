@@ -13,6 +13,8 @@ public class DestroyOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        GameManager.Instance.AddScore();
+
         source.Play();
 
         var burstingParticle = GameObject.Instantiate(burstingParticlePrefab, transform.position, Quaternion.identity);      
