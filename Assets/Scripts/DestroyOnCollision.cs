@@ -15,7 +15,7 @@ public class DestroyOnCollision : MonoBehaviour
     {
         source.Play();
 
-        var burstingParticle = GameObject.Instantiate(burstingParticlePrefab);      
+        var burstingParticle = GameObject.Instantiate(burstingParticlePrefab, transform.position, Quaternion.identity);      
         
         burstingParticle.Play();
 
