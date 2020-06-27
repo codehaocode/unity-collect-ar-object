@@ -9,9 +9,9 @@ public class GameManager : MonoBehaviour
 
     private int score;
 
-    public void AddScore()
+    public void AddScore(int scoreYouGet)
     {
-        score++;
+        score += scoreYouGet;
 
         scoreText.SetText($"Score: {score}");
     }

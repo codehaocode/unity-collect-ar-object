@@ -2,6 +2,7 @@
 
 public class DestroyOnCollision : MonoBehaviour
 {
+    [SerializeField] private int scoreYouGet = 1;
     [SerializeField] private ParticleSystem burstingParticlePrefab;
     
     private AudioSource source;
@@ -13,7 +14,7 @@ public class DestroyOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        GameManager.Instance.AddScore();
+        GameManager.Instance.AddScore(scoreYouGet);
 
         source.Play();
 

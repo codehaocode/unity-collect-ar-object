@@ -124,7 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd1847e033f14f90a5617446b89bd7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 8300000, guid: 8cac2d24fd6ef47a4b0d525f83bde5cc, type: 3}
+  scoreYouGet: 10
+  burstingParticlePrefab: {fileID: 5621849927268668983, guid: 8f8fb701ad8b141c2ad33e3f003ad0d0,
+    type: 3}
 --- !u!82 &7124179945207296603
 AudioSource:
   m_ObjectHideFlags: 0
