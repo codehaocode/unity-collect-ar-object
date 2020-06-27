@@ -2,8 +2,8 @@
 
 public class DestroyOnCollision : MonoBehaviour
 {
-    public ParticleSystem burstingParticle;
-
+    [SerializeField] private ParticleSystem burstingParticle;
+    
     private AudioSource source;
 
     void Start()
