@@ -14,7 +14,13 @@ public class DestroyOnCollision : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         source.Play();
-        burstingParticlePrefab.Play();
+
+        var burstingParticle = GameObject.Instantiate(burstingParticlePrefab);      
+        
+        burstingParticle.Play();
+
+        Destroy(burstingParticle.gameObject, burstingParticle.main.duration);
+        
         Destroy(gameObject, 0.5F);
     }
 }
