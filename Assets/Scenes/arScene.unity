@@ -1004,10 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839b34f08473c4995a24179637256f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 7207101603304788501, guid: 78f3068a6c5934507b9264c8c65e364b,
-    type: 3}
-  spherePrefab: {fileID: 4736464463054548501, guid: 670767a18ee3147dbb4995d498dbd95a,
-    type: 3}
   arCamObject: {fileID: 1076982391}
   spawnObjects:
   - {fileID: 7207101603304788501, guid: 78f3068a6c5934507b9264c8c65e364b, type: 3}
