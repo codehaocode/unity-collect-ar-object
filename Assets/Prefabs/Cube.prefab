@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 61c31214b276d49a59f605a72c7fd23d, type: 2}
+  - {fileID: 2100000, guid: b2e4e166b757146a68c1fac0077baf2e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd1847e033f14f90a5617446b89bd7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreYouGet: 10
+  scoreYouGet: 5
   burstingParticlePrefab: {fileID: 5621849927268668983, guid: 8f8fb701ad8b141c2ad33e3f003ad0d0,
     type: 3}
 --- !u!54 &4007904437115990549

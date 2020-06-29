@@ -956,6 +956,7 @@ GameObject:
   - component: {fileID: 1676292446}
   - component: {fileID: 1676292445}
   - component: {fileID: 1676292448}
+  - component: {fileID: 1676292447}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -991,6 +992,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676292447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676292444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c69abe1df38b43b0a6e62301b12c6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnObjects:
+  - {fileID: 3643749862029162675, guid: 2a69de035b94b4450a7b3b4e76b814e9, type: 3}
+  - {fileID: 7577050990238853785, guid: 1bd368d9d6add4a98b576b04d885c7dc, type: 3}
+  - {fileID: 7468690401876198564, guid: 05631a09085ea4802bbf0840f352a0c2, type: 3}
+  - {fileID: 7207101603304788501, guid: 78f3068a6c5934507b9264c8c65e364b, type: 3}
+  - {fileID: 4736464463054548501, guid: 670767a18ee3147dbb4995d498dbd95a, type: 3}
+  arCamObject: {fileID: 1076982391}
 --- !u!114 &1676292448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,50 +1026,3 @@ MonoBehaviour:
   m_AutomaticPlacement: 1
   m_EnvironmentTextureFilterMode: 2
   m_DebugPrefab: {fileID: 0}
---- !u!1 &2123564269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2123564271}
-  - component: {fileID: 2123564270}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2123564270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123564269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c69abe1df38b43b0a6e62301b12c6f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnObjects:
-  - {fileID: 7577050990238853785, guid: 1bd368d9d6add4a98b576b04d885c7dc, type: 3}
-  - {fileID: 3643749862029162675, guid: 2a69de035b94b4450a7b3b4e76b814e9, type: 3}
-  arCamObject: {fileID: 1076982391}
---- !u!4 &2123564271
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123564269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
