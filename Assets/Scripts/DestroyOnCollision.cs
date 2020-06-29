@@ -25,5 +25,8 @@ public class DestroyOnCollision : MonoBehaviour
         Destroy(burstingParticle.gameObject, burstingParticle.main.duration);
         
         Destroy(gameObject, 0.5F);
+
+        // ARViewController.SpawnObject();
+
     }
 }
