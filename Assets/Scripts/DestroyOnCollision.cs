@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class DestroyOnCollision : MonoBehaviour
 {
     [SerializeField] private int scoreYouGet = 0;
-    [SerializeField] private ParticleSystem burstingParticlePrefab;
-    
+    [SerializeField] private ParticleSystem burstingParticlePrefab;    
     private AudioSource source;
 
     void Start()
@@ -14,16 +14,14 @@ public class DestroyOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        
         ScoreManager.Instance.AddScore(scoreYouGet);
-
         source.Play();
 
-        var burstingParticle = GameObject.Instantiate(burstingParticlePrefab, transform.position, Quaternion.identity);      
-        
-        burstingParticle.Play();
+        GameObject.Instantiate(burstingParticlePrefab, col.transform.position, Quaternion.identity);
+      
+        gameObject.GetComponent<Rigidbody>().useGravity = true;
 
-        Destroy(burstingParticle.gameObject, burstingParticle.main.duration);
-        
         Destroy(gameObject, 0.5F);
 
         GameManager.Instance.SpawnObject();

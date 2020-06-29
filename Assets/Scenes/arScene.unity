@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -240}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15888863
 MonoBehaviour:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 1076982392}
   - component: {fileID: 1076982396}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: ARCamDummyNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,8 +398,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1
-  m_Height: 3.4892113
+  m_Radius: 2
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.00000011920929, y: 0.060479164, z: -0.059980273}
 --- !u!23 &1076982393
@@ -420,7 +420,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca93363af3fc6419fab44a5654946bee, type: 2}
+  - {fileID: 2100000, guid: 32d7acb6e5a0e40ac8b2512fb9c653c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,7 +461,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1076982396
 Rigidbody:
@@ -629,7 +629,7 @@ RectTransform:
   m_Children:
   - {fileID: 1434784602}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

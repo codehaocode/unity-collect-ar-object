@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         SpawnObject();
 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
     }
     public void SpawnObject()
     {

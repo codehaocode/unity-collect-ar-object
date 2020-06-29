@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreYouGet: 10
-  burstingParticlePrefab: {fileID: 5621849927268668983, guid: 8f8fb701ad8b141c2ad33e3f003ad0d0,
+  burstingParticlePrefab: {fileID: 198000010585806678, guid: 96730f8640590934eacb6f860058e7f9,
     type: 3}
 --- !u!54 &-7421401621250946786
 Rigidbody:
