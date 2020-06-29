@@ -398,7 +398,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8723029
+  m_Radius: 1
   m_Height: 3.4892113
   m_Direction: 1
   m_Center: {x: 0.00000011920929, y: 0.060479164, z: -0.059980273}
@@ -1006,9 +1006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arCamObject: {fileID: 1076982391}
   spawnObjects:
-  - {fileID: 7468690401876198564, guid: 05631a09085ea4802bbf0840f352a0c2, type: 3}
-  - {fileID: 7207101603304788501, guid: 78f3068a6c5934507b9264c8c65e364b, type: 3}
-  - {fileID: 4736464463054548501, guid: 670767a18ee3147dbb4995d498dbd95a, type: 3}
+  - {fileID: 3643749862029162675, guid: 2a69de035b94b4450a7b3b4e76b814e9, type: 3}
+  - {fileID: 7577050990238853785, guid: 1bd368d9d6add4a98b576b04d885c7dc, type: 3}
 --- !u!114 &1676292448
 MonoBehaviour:
   m_ObjectHideFlags: 0
