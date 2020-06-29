@@ -1,19 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] public GameObject[] spawnObjects;
 
-    private int score;
-
-    public void AddScore(int scoreYouGet)
+    public GameObject SpawnObject()
     {
-        score += scoreYouGet;
-
-        scoreText.SetText($"Score: {score}");
+        var index = UnityEngine.Random.Range(0, spawnObjects.Length);
+        var objectToSpawn = spawnObjects[index];
+    
+        Vector3 position = new Vector3((UnityEngine.Random.Range(-2F, 2F)), 0.0F, UnityEngine.Random.Range(1.5F, 2.5F));
+        return Instantiate(objectToSpawn, position, Quaternion.identity);
     }
 
     public static GameManager Instance {
@@ -33,7 +32,6 @@ public class GameManager : MonoBehaviour
     }
     private static GameManager instance;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (instance == null)
@@ -42,9 +40,4 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

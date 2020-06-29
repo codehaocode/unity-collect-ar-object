@@ -2,7 +2,7 @@
 
 public class DestroyOnCollision : MonoBehaviour
 {
-    [SerializeField] private int scoreYouGet = 1;
+    [SerializeField] private int scoreYouGet = 0;
     [SerializeField] private ParticleSystem burstingParticlePrefab;
     
     private AudioSource source;
@@ -14,7 +14,7 @@ public class DestroyOnCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        GameManager.Instance.AddScore(scoreYouGet);
+        ScoreManager.Instance.AddScore(scoreYouGet);
 
         source.Play();
 
@@ -26,7 +26,6 @@ public class DestroyOnCollision : MonoBehaviour
         
         Destroy(gameObject, 0.5F);
 
-        // ARViewController.SpawnObject();
-
+        GameManager.Instance.SpawnObject();
     }
 }
